@@ -3,24 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tongzhi</string>
+	<string>key</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(&lt;#methodName#&gt;) name:kLoginNotification object:nil];
-        // 取消监听
-        [[NSNotificationCenter defaultCenter] removeObserver:self];
-        // 发送通知
-        NSDictionary * userInfo = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:200] forKey:@"code"];
-        [[NSNotificationCenter defaultCenter] postNotificationName:&lt;#notification_name#&gt; object:self userInfo:userInfo];</string>
+	<string>,@"sessionId"</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>87229AA2-8B06-42CD-AEF4-031477C609F8</string>
+	<string>C183A87E-C72C-46D2-9559-572890A16B7C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tongzhi</string>
+	<string>key</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
