@@ -3,19 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>assign</string>
+	<string>logf</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,assign)</string>
+	<string>NSLog(@"当前方法签名（__PRETTY_FUNCTION__）：%s    %@", __PRETTY_FUNCTION__,self);
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7D61FAAB-196E-4105-B1DB-A982544169B9</string>
+	<string>AA7B1FC4-F7A1-43AF-B696-4535BA3D173D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>assign</string>
+	<string>logf</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
