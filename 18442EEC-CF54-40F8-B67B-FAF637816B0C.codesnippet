@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>http</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>User * user = [User currentUser];
+    
+    NSMutableDictionary *dicM = [NSMutableDictionary dictionary];
+    dicM[@"name"] = self.tf1.text;
+    dicM[@"telPhone"] = self.tf2.text;
+    dicM[@"areaCd"] = self.tf3.text;
+    dicM[@"content"] = self.tv.text;
+    dicM[@"sessionId"] = user.sessionId;
+
+    WS(weakSelf);
+    [XHQHttpTool xhqpost:[urlUS stringByAppendingString:@"/agentJoin.do"] params:dicM success:^(NSString *urlStr, NSDictionary *json) {
+        if (weakSelf == nil) {
+            return ;
+        }
+        if ([json[@"respCode"] isEqualToString:@"000"]) {
+            
+            [json[@"respDesc"] showHUD];
+        }
+    } failure:^(NSString *urlStr, NSError *error) {
+        if (weakSelf == nil) {
+            return ;
+        }
+        [error.localizedDescription showHUD];
+    } timeOut:0 showMB:YES toView:self.view];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>18442EEC-CF54-40F8-B67B-FAF637816B0C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>http</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
